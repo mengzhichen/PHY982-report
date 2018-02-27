@@ -25,7 +25,7 @@
 \begin{document}
 \maketitle
 
-\section{Elastic Scattering between nucleons and $^{208}$Pb}
+\section{Elastic scattering calculations between nucleons and $^{208}$Pb target}
 \subsection{Coulomb scattering}
 	In the case of point-Coulomb scattering, the Coulomb interaction between the projectile and the target with charges $Z_1$ and $Z_2$ is 
 	\begin{equation}
@@ -49,14 +49,15 @@
 	
   		In sum, we see the finite size of the target can give cross sections different from the point-like case.
 \subsection{The optical potential}
-	In this section, we study the elastic scattering between nucleons and the $^{208}$Pb target with the help of FRESCO\cite{FRESCO} . Their effective interaction refers to as the optical potential. We take the global parameterization from Ref. \cite{capote2009ripl,koning2003local} as the input for FRESCO.
+	In this section, we study the elastic scattering between nucleons and the $^{208}$Pb target with the help of FRESCO\cite{FRESCO} . Their effective interaction is referred to as the optical potential. We take the global parameterization from Ref. \cite{capote2009ripl,koning2003local} as the input for FRESCO.
 	
-	In the first step, we take two lab energies 5 and 50 MeV in our calculation. The results are shown in Figure \ref{fig:angulardistribution}. It gives the angular distributions in center of mass for protons and neutrons are shown. For the 5 MeV proton, the curve agrees well with the \emph{Rutherford cross section}. Given that the radius parameter of optical potential is $r_w\sim1.2\ fm$, we can estimate the Coulomb barrier for a proton to overcome. It should be 
+	In the first step, we take two lab energies 5 and 50 MeV in our calculation. The results are shown in Figure \ref{fig:angulardistribution}. It gives the angular distributions in center of mass for protons and neutrons. For the 5 MeV proton, the curve agrees well with the \emph{Rutherford cross section}. Given that the radius parameter of optical potential is $r_w\sim1.2\ fm$, we can estimate the Coulomb barrier for a proton to overcome. It should be 
 	\begin{equation}
 	E_{Coul}\approx\frac{Z_1Z_2e^2}{r_w+R_2}\approx15\ \rm{MeV}.
 	\end{equation}
 	We see that 5 Mev is much lower than the Coulomb barrier. Thus, this scattering can be referred as a point-like Coulomb scattering properly. The agreement with the \emph{Rutherford cross section} also verifies this point.
-	As going to 50 MeV which is strong enough to overcome the Coulomb barrier, the effective interaction plays a role and induces a diffraction pattern in Figure \ref{fig:angulardistribution}. In order to explore the influence of the optical potential, we will use $E_{lab}$ = 50 MeV in our following calculations.
+	For neutrons, there is no Rutherford scattering cross section to compare against, hence the value of the neutron cross section being listed as $fm^2$. At 5 MeV the cross section hints at a broad diffraction pattern.
+	Since 50 MeV is strong enough to overcome the Coulomb barrier, the effective interaction plays a role and induces a diffraction pattern in Figure \ref{fig:angulardistribution}. The neutron cross section exhibits a similar behavior, speaking to the dominance of the nuclear interaction at this energy. In order to explore the influence of the optical potential, we will use $E_{lab}$ = 50 MeV in our following calculations.
 	
 	\begin{figure}[t]
 	\centering
@@ -65,11 +66,12 @@
 	\label{fig:angulardistribution}
 	\end{figure}
 	
-	In our next step, we would like to see the influences of the depth of optical potential's imaginary part of the S-matrix. Fixing other parameters, we scale the depth of imaginary parts $V_i$ (including volume, surface derivative and spin-orbit potentials) a factor of 1.5, 0.5 and 0. The modules of S-matrix with for the proton and the neutron are shown in Table \ref{pSmatrix} and \ref{nSmatrix}. We can see that as we lower the depth, $|\mathbf{S}|^2$ gradually converges to one which indicates an elastic scattering. It inspires us that the imaginary parts describe absorptions in scattering processes. It also worth noticing that we don't see the growth of $|\mathbf{S}|^2$ with decreasing $V_i$ in every partial waves. We suggest more information about total absorptive cross sections for being fully convinced.
+	In our next step, we would like to see the influences of the depth of optical potential's imaginary part of the S-matrix. Fixing other parameters, we scale the depth of imaginary parts $V_i$ (including volume, surface derivative and spin-orbit potentials) a factor of 1.5, 0.5 and 0. The modules of S-matrix with for the proton and the neutron are shown in Table \ref{pSmatrix} and \ref{nSmatrix}. We can see that as we lower the depth, $|\mathbf{S}|^2$ fluctuates and eventually converges to one which indicates an elastic scattering. It inspires us that the imaginary parts can describe absorptions in scattering processes. It also worth noticing the fluctuation of $|\mathbf{S}|^2$ with varying $V_i$ in each partial wave. For this reason, there is no simple monotonous relations between the relative depth $\bar{V}$ and the total absorptive cross section.
 
 	\begin{table}[]
 \centering
 \begin{tabular}{cccccc}
+\toprule
 \toprule
 \multicolumn{6}{c}{Proton partial waves}                                                                         \\
  \midrule
@@ -86,6 +88,7 @@ L                     & J                     & $|\mathbf{S}|^2$($\bar{V}$=1.5) 
    
 $\cdots$           &$\cdots$                    & $\cdots$                            & $\cdots$                           & $\cdots$                           & $\cdots$                                                                \\
 \bottomrule
+\bottomrule
 \end{tabular}
 \caption{The modules of S-matrix for proton partial waves with varying imaginary potentials, where $\bar{V}$ is the scaled depth defined as $\frac{V_i(new)}{V_i(old)}$.}
 \label{pSmatrix}
@@ -94,6 +97,7 @@ $\cdots$           &$\cdots$                    & $\cdots$                      
 \begin{table}[]
 \centering
 \begin{tabular}{cccccc}
+\toprule
 \toprule
 \multicolumn{6}{c}{Neutron partial waves}                                                                         \\
  \midrule
@@ -107,6 +111,7 @@ L                     & J                     & $|\mathbf{S}|^2$($\bar{V}$=1.5) 
 4 & 3.5 & 0.0                          & 1.14E-03                     & 0.0                          & 1.0                          \\
 3 & 3.5 & 0.0                          & 2.61E-04                     & 0.0                          & 1.0                          \\   
 $\cdots$           &$\cdots$                    & $\cdots$                            & $\cdots$                           & $\cdots$                           & $\cdots$                                                                \\
+\bottomrule
 \bottomrule
 \end{tabular}
 \caption{The modules of S-matrix for neutron partial waves with varying imaginary potentials, where $\bar{V}$ is the scaled depth defined as $\frac{V_i(new)}{V_i(old)}$.}
@@ -122,6 +127,8 @@ $\cdots$           &$\cdots$                    & $\cdots$                      
 	\caption{Differential cross sections for nucleons scattering with $^{208}$Pb with different radius parameters at 50MeV, where ratio is defined as $\frac{r_{new}}{r_{old}}$. Left panel is proton and right panel is neutron  }
 	\label{fig:radiusparameter}
 	\end{figure}
+	
+	The total reaction cross section is directly accessible in FRESCO. In order to align with existing experimental information on n + $^{208}$Pb, a lab energy of 40 MeV is used. The value for this reaction's absorption cross section is 55.2 barns. Since it's a elastic scattering, the total reaction cross section takes the same value.
 	
 \FloatBarrier
 
