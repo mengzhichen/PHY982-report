@@ -1,0 +1,48 @@
+\begin{thebibliography}{1}
+
+\bibitem{AJZENBERGSELOVE1972205}
+F.~Ajzenberg-Selove, R.F. Casten, O.~Hansen, and T.J. Mulligan.
+\newblock Levels of 11be from a study of the 9be(t, p)11be reaction.
+\newblock {\em Physics Letters B}, 40(2):205 -- 207, 1972.
+
+\bibitem{PhysRevLett.119.082501}
+F.~Barranco, G.~Potel, R.~A. Broglia, and E.~Vigezzi.
+\newblock Structure and reactions of $^{11}\mathrm{Be}$: Many-body basis for
+  single-neutron halo.
+\newblock {\em Phys. Rev. Lett.}, 119:082501, Aug 2017.
+
+\bibitem{rk2web}
+Birne Binegar.
+\newblock Lecture 18: {R}unge-{K}utta {M}ethods.
+\newblock \url{https://math.okstate.edu/people/binegar/4233/4233-l18.pdf}.
+\newblock [Online; accessed \today].
+
+\bibitem{musa2010simplified}
+H~Musa, Ibrahim Saidu, and MY~Waziri.
+\newblock A {S}implified {D}erivation and {A}nalysis of {F}ourth {O}rder
+  {R}unge {K}utta {M}ethod.
+\newblock {\em International Journal of Computer Applications}, 9(8):51--55,
+  2010.
+
+\bibitem{sciphy}
+Eric Jones, Travis Oliphant, Pearu Peterson, et~al.
+\newblock {SciPy}: Open source scientific tools for {Python}, 2001--.
+\newblock [Online; accessed \today].
+
+\bibitem{hindmarsh1983odepack}
+Alan~C Hindmarsh.
+\newblock Odepack, a systematized collection of ode solvers.
+\newblock {\em Scientific computing}, pages 55--64, 1983.
+
+\bibitem{brown1989reduced}
+Peter~N Brown and Alan~C Hindmarsh.
+\newblock Reduced storage matrix methods in stiff ode systems.
+\newblock {\em Applied Mathematics and Computation}, 31:40--91, 1989.
+
+\bibitem{thompson2009nuclear}
+Ian~J Thompson and Filomena~M Nunes.
+\newblock Nuclear reactions for astrophysics: principles, calculation and
+  applications of low-energy reactions.
+\newblock pages 55--70, 2009.
+
+\end{thebibliography}
