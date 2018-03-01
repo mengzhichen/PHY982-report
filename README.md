@@ -17,3 +17,5 @@ First complete version for part 1. Review needed.
 4. Part 2 except the sensitivity study is committed. 
 
 5. Sensitivity of part 2 included. I've used pna.png, pnr.png, and pnV.png in the report. These plots were generated from the "Reactions - HW2 Sensitivity.ipynb" iPython notebook file.
+
+6. Combine all the parts and finalize. 
