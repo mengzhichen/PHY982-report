@@ -27,26 +27,27 @@ As shown in the last four lines in Table \ref{proton_table} and \ref{neutron_tab
 we gradually add and fit different parameters in the spin-orbit term.  
 As for proton, the description can hardly be improved by only adding a real spin-orbit potential (index 6 in Table \ref{proton_table}).  
 If we only add a imaginary spin-orbit component, the diffuseness parameter ``awso" will become negative and thus unphysical 
-(index 8 in Table \ref{proton_table}), so we abandon this set of parameters. 
+(index 8 in Table \ref{proton_table}). 
 If both real and imaginary components of spin-orbit potential are included, $\chi^2/N$ will slightly decrease from 4.860 to 3.611,
-(index 9 in Table \ref{proton_table}), which indicates that the spin-orbit term is not very important 
-for the description of elastic scattering of a proton on $^{208}$Pb. 
+(index 9 in Table \ref{proton_table}). 
+However, the relative errors of ``Vso" and ``Wso" are larger than 0.1, so they are not well constrained. 
+Therefore, spin-orbit potentials are not important for the description of scattering of a proton on $^{208}$Pb. 
 \par
-As for neutron, the radius parameter ``rvso'' will become negative and unphysical when only a real spin-orbit component is included 
-(index 6 in Table \ref{neutron_table}), so we abandon this set of parameters. 
-By only adding an imaginary spin-orbit component, $\chi^2/N$ is slightly lowered from 4.638 to 3.310 
-(index 8 in Table \ref{neutron_table}). 
-When both real and imaginary spin-orbit parts are varied, $\chi^2/N$ can be even lower (index 9 in Table \ref{neutron_table}). 
-But in this case the diffuseness ``avso" will become less than radius ``rvso", which is unphysical and unacceptable. 
-As no significant improvement is seen from adding spin-orbit terms, we think that 
-the spin-orbit term is not important for the description of elastic scattering of a neutron on $^{208}$Pb. 
+As for neutron, we fit the spin-orbit term in a similar way. 
+All the unphysical and unconstrained parameters are shown in Table \ref{neutron_table}. 
+Since no significant improvement is seen from adding spin-orbit potentials and lots of parameters become unphysical or unconstrained 
+in our fitting process, we think that the spin-orbit term is not important for the description of scattering of a neutron on $^{208}$Pb. 
+Fig. \ref{fig:bothfit} shows the differential cross sections calculated from optical potential 5 
+(volume real term + surface imaginary term), which are close to the experimental results. 
+Thus, our fitting results are good enough to be employed in further calculations.  
 
 \begin{landscape}
 	\begin{table}[t]
 		\centering
-		\caption{Fitting results of scattering of a proton on $^{208}$Pb. 
+		\caption{Fitting results of scattering of a proton on $^{208}$Pb. The beam energy is 49.35 MeV. 
 		The unit of Vv, Wv, Ws, Vso and Wso is MeV, and the unit of rv, av, rwv, awv, rws, aws, rvso, avso, rwso and awso is fm. 
-	    Unphysical values are highlighted in red. }
+	    Unphysical values are highlighted in red. Values that are not well constrained are highlighted in blue. 
+        Fig. \ref{fig:proton_fit} gives the differential cross section for optical potential 5 (marked in bold). }
 		\label{proton_table}
 		\footnotesize
 		\begin{tabular}{cccccccccccccccccc}
@@ -58,11 +59,11 @@ the spin-orbit term is not important for the description of elastic scattering o
 			2     & 1          & 46.1     & 1.262   & 0.574    & 16.6     & 1.244    & 0.646    & -        & -        & -        & -         & -         & -         & -         & -         & -        & 27.134   \\
 			3     & 2          & 44.6     & 1.254   & 1.87E-04 & 4.89     & 1.726    & 0.171    & -        & -        & -        & -         & -         & -         & -         & -         & -        & 5.479    \\
 			4     & -          & 46.1     & 1.262   & 0.574    & -        & -        & -        & 19.5     & 1.246    & 0.615    & -         & -         & -         & -         & -         & -        & 11.335   \\
-			5     & 4          & 45.3     & 1.229   & 0.528    & -        & -        & -        & 13.2     & 1.295    & 0.713    & -         & -         & -         & -         & -         & -        & 4.860    \\
-			6     & 5          & 45.2     & 1.232   & 0.489    & -        & -        & -        & 12.7     & 1.295    & 0.732    & 0.14     & 1.07     & 0.55     & -         & -         & -        & 4.838    \\
+			\textbf{5}     & \textbf{4}          & \textbf{45.3}     & \textbf{1.229}   & \textbf{0.528}    & \textbf{-}        & \textbf{-}        & \textbf{-}        & \textbf{13.2}     & \textbf{1.295}    & \textbf{0.713}    & \textbf{-}         & \textbf{-}         & \textbf{-}         & \textbf{-}         & \textbf{-}         & \textbf{-}        & \textbf{4.860}    \\
+			6     & 5          & 45.2     & 1.232   & 0.489    & -        & -        & -        & 12.7     & 1.295    & 0.732    & \color{blue}{0.14}     & \color{blue}{1.07}     & \color{blue}{0.55}     & -         & -         & -        & 4.838    \\
 			7     & -          & 45.2     & 1.232   & 0.489    & -        & -        & -        & 12.7     & 1.295    & 0.732    & -         & -         & -         & -3.1    & 1.08      & 0.57     & 12.026   \\
 			8     & 7          & 45.1     & 1.242   & 0.507    & -        & -        & -        & 12.0     & 1.279    & 0.748    & -         & -         & -         & -2.1     & 0.66     & \color{red}{-0.028}   & 4.068    \\
-			9     & 7          & 45.2     & 1.276   & 0.540    & -        & -        & -        & 15.7     & 1.239    & 0.710    & -6.9     & 0.84     & 0.55     & -8.0     & 1.03      & 0.53     & 3.661   \\
+			9     & 7          & 45.2     & 1.276   & 0.540    & -        & -        & -        & 15.7     & 1.239    & 0.710    & \color{blue}{-6.9}     & 0.84    & 0.55  & \color{blue}{-8.0}  & 1.03  & 0.53     & 3.661   \\
 			\hline
 			\hline
 		\end{tabular}
@@ -70,9 +71,10 @@ the spin-orbit term is not important for the description of elastic scattering o
 
 \begin{table}[b]
 	\centering
-	\caption{Fitting results of scattering of a neutron on $^{208}$Pb. 
+	\caption{Fitting results of scattering of a neutron on $^{208}$Pb. The beam energy is 40.0 MeV. 
 			The unit of Vv, Wv, Ws, Vso and Wso is MeV, and the unit of rv, av, rwv, awv, rws, aws, rvso, avso, rwso and awso is fm. 
-			Unphysical values are highlighted in red. }
+			Unphysical values are highlighted in red. Values that are not well constrained are highlighted in blue. 
+     		Fig. \ref{fig:neutron_fit} gives the differential cross section for optical potential 5 (marked in bold). }
 	\label{neutron_table}
 	\footnotesize
 	\begin{tabular}{cccccccccccccccccc}
@@ -84,16 +86,35 @@ the spin-orbit term is not important for the description of elastic scattering o
 		2     & 1        & 40.3 & 1.245 & 0.903 & 15.6  & 1.244 & 0.646 & -    & -     & -     & -   & -     & -    & -     & -    & -    & 46.553     \\
 		3     & 2        & 41.9 & 1.154 & 0.762 & 6.598 & 1.383 & 0.824 & -    & -     & -     & -   & -     & -    & -     & -    & -    & 7.900      \\
 		4     & -        & 40.3 & 1.245 & 0.903 & -     & -     & -     & 13.8 & 1.246 & 0.510 & -   & -     & -    & -     & -    & -    & 98.423     \\
-		5     & 4        & 36.4 & 1.269 & 0.585 & -     & -     & -     & 14.4 & 1.097 & 0.500 & -   & -     & -    & -     & -    & -    & 4.638      \\
+		\textbf{5}     & \textbf{4}        & \textbf{36.4} & \textbf{1.269} & \textbf{0.585} & \textbf{-}     & \textbf{-}     & \textbf{-}     & \textbf{14.4} & \textbf{1.097} & \textbf{0.500} & \textbf{-}   & \textbf{-}     & \textbf{-}    & \textbf{-}     & \textbf{-}    & \textbf{-}    & \textbf{4.638}      \\
 		6     & 5        & 36.1 & 1.277 & 0.578 & -     & -     & -     & 15.7 & 1.108 & 0.498 & 8.3 & \color{red}{-4.3} & 3.2 & -     & -    & -    & 3.084      \\
 		7     & -        & 36.4 & 1.269 & 0.585 & -     & -     & -     & 14.4 & 1.097 & 0.500 & -   & -     & -    & -3.1 & 1.08 & 0.57 & 35.163     \\
-		8     & 7        & 36.4 & 1.273 & 0.593 & -     & -     & -     & 15.2 & 1.109 & 0.519 & -   & -     & -    & -3.1 & 1.09 & 0.43 & 3.310      \\
+		8     & 7        & 36.4 & 1.273 & 0.593 & -     & -     & -     & 15.2 & 1.109 & 0.519 & -   & -     & -    & \color{blue}{-3.1} & 1.09 & 0.43 & 3.310      \\
 		9     & 8        & 35.8 & 1.266 & 0.592 & -     & -     & -     & 14.9 & 1.107 & 0.513 & 4.9 & \color{red}{1.03}  & \color{red}{1.23} & -3.0 & 1.06 & 0.81 & 2.258      \\
 		\hline
 		\hline
 	\end{tabular}
 \end{table}
 \end{landscape}
+\begin{figure}[tb]
+	\begin{subfigure}[tb]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.65\textwidth,angle=270]{proton_fit.eps}
+		\caption{Differential cross section of scattering of a proton on $^{208}$Pb with beam energy 49.35 MeV. 
+		Optical potential 5 in Table \ref{proton_table} is used for the calculation. }
+		\label{fig:proton_fit}
+	\end{subfigure}
+~
+	\begin{subfigure}[tb]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.65\textwidth,angle=270]{neutron_fit.eps}
+		\caption{Differential cross section of scattering of a neutron on $^{208}$Pb with beam energy 40.0 MeV. 
+			Optical potential 5 in Table \ref{neutron_table} is used for the calculation. }
+		\label{fig:neutron_fit}
+	\end{subfigure}
+	\caption{Comparison of differential cross sections with experimental results. }
+	\label{fig:bothfit}
+\end{figure}
 
 \subsection{Fit Sensitivity to Initialization}
 Here we study the sensitivity of SFRESCO fitting to initial parameters. We used volume real and surface imaginary components of the optical potential only. Although there is improvement in the neutron scattering fit by inclusion of a spin-orbit imaginary term, optimal fits without this term are roughly 40\% of the fit with this additional term ($\chi^2/N = 3.310, 4.638 $). Optimal initial parameters were determined by successive fitting and reinitializing output parameters until a stable minimum was achieved with parameters comparable to the initial global potential fits from \cite{capote2009ripl}.
