@@ -18,4 +18,6 @@ First complete version for part 1. Review needed.
 
 5. Sensitivity of part 2 included. I've used pna.png, pnr.png, and pnV.png in the report. These plots were generated from the "Reactions - HW2 Sensitivity.ipynb" iPython notebook file.
 
-6. Combine all the parts and finalize. 
+6. Combine all the parts and finalize.
+
+7. Further modification for part 1.  #1. Add solid sphere example for form factor.  #2. Give expectations for varying radius parameters. Covergence need to be added for part 1.
