@@ -23,3 +23,5 @@ First complete version for part 1. Review needed.
 7. Further modification for part 1.  #1. Add solid sphere example for form factor.  #2. Give expectations for varying radius parameters. Covergence need to be added for part 1.
 
 8. Small optimizations in part 1.
+
+9. Updated section on sensitivity to remove words "numerical instability".
