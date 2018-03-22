@@ -1,15 +1,15 @@
 \section{Choice of beam energies and potentials} \label{part1}
 	The $^{12}$C(d, p)$^{13}$C reaction is discussed in this work. 
 	The Coulomb barrier between $^{12}$C and deutron is about 2.03 MeV.
-	Then, two deuteron beam energies are studied, one is 2.84 MeV near the Coulomb barrier; another one is 4.51 MeV which is about 2 times higher than the barrier .
+	Two deuteron beam energies are studied, one is 2.84 MeV near the Coulomb barrier; another one is 4.51 MeV which is about 2 times the barrier .
 	
-	As mentioned in Ref. \cite{PhysRev.101.209}, at both energies we choose the angular distributions should be explained by assuming small amplitudes for compound nucleus formation interfering with large stripping amplitudes. 
-	Therefore our calculations using FRESCO may not yield satisfying agreement with experiment.
+	Angle differential cross-sections should be explained well by DWBA and other transfer model approximations, implemented in the FRESCO code, assuming small amplitudes for compound nucleus formation and large amplitudes for stripping and transfer. 
+	Therefore our calculations using FRESCO are expected to yield less satisfying agreement with experiment for the lower beam energy and for large cross-section angles.
 	
 	Optical potentials are needed that described the incoming and outgoing distorted waves.  
 	These are interactions between the following pairs: ($^{12}$C, d) \cite{PhysRevC.73.054605}, ($^{12}$C, p) \cite{PTCOG} and ($^{13}$C, p). 
 	For the potential of ($^{13}$C, p), we cannot find an appropriate one in the energy range we study, 
-	so we use the potential of ($^{12}$C, p) instead. 
+	so we use the potential of ($^{12}$C, p) at the relevant energies instead. 
 	For the deuteron wavefunction, the binding for the proton and neutron is described by a simple Gaussian potential 
 	\begin{equation}
 		V_{np}(r)=-72.15e^{-(r/1.484)^2}.
@@ -17,6 +17,6 @@
 	which reproduces a bound s-state at 2.2 MeV.
 	
 	The neutron that is transferred in the reaction is expected to occupy a $1p_{1/2}$ orbit with an experimental single-particle binding energy of 4.946 MeV. 
-	The FRESCO calculation dynamically adjusts the Woods-Saxon depth for $^{13}$C to reproduce this energy.
+	The FRESCO is set to dynamically adjust the Woods-Saxon depth for $^{13}$C to reproduce this energy.
 	
 	
