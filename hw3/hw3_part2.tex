@@ -1,4 +1,4 @@
-\section{Results of DWBA post-form calculations}
+\section{Results of DWBA post-form calculations}\label{sec:post}
 
 \begin{figure}[t]
 	\centering
@@ -7,13 +7,13 @@
 	\label{fig:transfer}
 \end{figure}
 In a transfer reaction A(d,p)B showed in Fig. \ref{fig:transfer}, by introduction the auxiliary potential $U_f(R_2)$, the transfer T-matrix has a formula \cite{thompson2009nuclear}
-\begin{equation}
-	T_{post}=<\phi_{nA}\chi_{pB}^{(-)}\left|V_{np}(r_1)+U_{pA}(r_p)-U_f(R_2)\right|\Psi_1^+(\vec{r}_1,\vec{R}_1)>,
+\begin{equation}\label{eq:postexact}
+	T_{post}=\langle\phi_{nA}\chi_{pB}^{(-)}\left|V_{np}(r_1)+U_{pA}(r_p)-U_f(R_2)\right|\Psi_1^{(+)}(\vec{r}_1,\vec{R}_1)\rangle,
 \end{equation}
 where $\phi_{nA}$ and $\chi_{pB}$ are bound states wave-functions. 
-Under DWBA approximation, it becomes
+Under first-order DWBA, it becomes
 \begin{equation}\label{tpost}
-	T_{post}^{DWBA}=<\phi_{nA}\chi_{pB}^{(-)}\left|V_{np}(r_1)+U_{pA}(r_p)-U_f(R_2)\right|\phi_{np}\chi_{dA}>.
+	T_{post}^{DWBA}=\langle\phi_{nA}\chi_{pB}^{(-)}\left|V_{np}(r_1)+U_{pA}(r_p)-U_f(R_2)\right|\phi_{np}\chi_{dA}\rangle.
 \end{equation}
 Besides that, we still need information for the auxiliary potential $U_f(R_2)$. 
 It's usually chosen as $U_{pB}(R_2)$ fitted from elastic scattering.
@@ -26,8 +26,8 @@ Here are three different handling methods we used in our calculations.
 	\begin{equation}
 		T_{post}^{ZR-DWBA}=D_0<\phi_{nA}(R_1)\chi_{pB}^{(-)}| \chi_{dA}(R_1)>
 	\end{equation}
-	It now relies on $R_1$ only which simplifies calculation.
-	\item First order DWBA without or with remnant: The former abandons the remnants but latter keeps, as well as the nonlocality of $V_{np}(r_1)$ is preserved in both.
+	It now relies on $R_1$ only, which simplifies calculation.
+	\item First-order DWBA, finite-range interactions, without or with full complex remnant: The former abandons the remnants but the latter keeps, as well as the nonlocality of $V_{np}(r_1)$ is preserved in both.
 \end{enumerate}
 
 The results together with experimental data are presented in figures (need to be supplemented). 

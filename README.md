@@ -26,4 +26,6 @@ First complete version for part 1. Review needed.
 
 9. Updated section on sensitivity to remove words "numerical instability".
 
-10. Convergence check added. All optimization parts finished.
+10. Convergence check added. All optimization parts finished. 
+
+11. Parts 3 and 4 of homework 3 are added. Figures are still not included. Spectroscopic factors are left blank. Convergence check needs to be added to part 2. 
