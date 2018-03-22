@@ -1,2 +1,19 @@
-\section{Choice of beam energies and potentials for $^{12}$C(d,p)$^{13}$C reaction}
-To be filled by John. 
+\section{Choice of beam energies and potentials} \label{part1}
+	The $^{12}$C(d, p)$^{13}$C reaction is discussed in this work. 
+	Two deuteron beam energies are used, one is 2.84 MeV near the Coulomb barrier around 2 MeV and another one is 4.51 MeV.
+	
+	At both of the experimental energies chosen, the reaction is more accurately modeled as a compound reaction, as mentioned in \cite{PhysRev.101.209}.
+	Therefore our calculations using FRESCO may not yield satisfying agreement with experiment.
+	
+	Optical potentials are needed that described the incoming and outgoing distorted waves.  
+	These are interactions between: $^{12}$C, d \cite{PhysRevC.73.054605}; $^{13}$C, p \cite{PhysRevC.4.1114}; and $^{12}$C, p\cite{PTCOG}.
+	For the deuteron wavefunction, the binding for the proton and neutron was described by a simple gaussian potential 
+	\begin{equation}
+		V_{np}(r)=-72.15e^{-(r/1.484)^2}.
+	\end{equation}
+	scaled to reproduce a bound state at 2.2 MeV.
+	
+	The neutron that is transferred in the reaction is expected to occupy a $1p_{\frac{1}{2}}$ orbit with an experimental single-particle binding energy of 4.946 MeV. 
+	The FRESCO calculation dynamically adjusts the Woods-Saxon depth for $^{13}$C to reproduce this energy.
+	
+	
