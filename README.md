@@ -25,3 +25,5 @@ First complete version for part 1. Review needed.
 8. Small optimizations in part 1.
 
 9. Updated section on sensitivity to remove words "numerical instability".
+
+10. Convergence check added. All optimization parts finished.
