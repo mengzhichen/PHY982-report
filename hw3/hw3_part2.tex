@@ -21,17 +21,45 @@ We name $V_{np}(r_1)$ as binding potential and the rest two remnants.
 
 Here are three different handling methods we used in our calculations.
 \begin{enumerate}
-\item Zero range approximation (ZRA): Remnants are neglected; $V_{np}(r_1)$ is considered as a local interaction with strength $D_0$.
+\item Zero range (ZR) approximation: Remnants are neglected; $V_{np}(r_1)$ is considered as a local interaction with strength $D_0$.
 	Correspondingly, the T-matrix becomes
 	\begin{equation}
-		T_{post}^{ZR-DWBA}=D_0<\phi_{nA}(R_1)\chi_{pB}^{(-)}| \chi_{dA}(R_1)>
+		T_{post}^{ZR-DWBA}=D_0\langle\phi_{nA}(R_1)\chi_{pB}^{(-)}| \chi_{dA}(R_1)\rangle.
 	\end{equation}
 	It now relies on $R_1$ only, which simplifies calculation.
 	\item First-order DWBA, finite-range interactions, without or with full complex remnant: The former abandons the remnants but the latter keeps, as well as the nonlocality of $V_{np}(r_1)$ is preserved in both.
 \end{enumerate}
 
-The results together with experimental data are presented in figures (need to be supplemented). 
-We can see ZRA gives result deviates most from experiment because it applies the roughest approximation.
-DWBA with or without remnants yield close results.
+ \begin{figure}[h]
+    \begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.98\textwidth]{3MeVReactions.png}
+		\caption{2.84 MeV experiment and post-form approximations. }
+		\label{fig:3MeV}
+	\end{subfigure}
+        \begin{subfigure}{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.98\textwidth]{5MeVReactions.png}
+		\caption{4.51 MeV experiment and post-form approximations. }
+		\label{fig:5MeV}
+        \end{subfigure}
+       \caption{Forward-angled differential cross sections calculated under: 1) zero-range approximation (ZR); 2) first-order DWBA finite range without remnant (FR - noRem); 3) first-order DWBA finite range with full complex remnant (FR - fullRem), as well as experimental data. 
+        	Left and right panels are for 2.84 MeV and 4.51 MeV repectively.}
+        \label{fig:post}
+  \end{figure}
+
+Our results are generated with radius $r_{match}$ = 60 fm, partial waves up to $j_{max}$ = 55 (in units of $\hbar$) and step size $rintp$ = 0.2 fm. 
+To test the convergence, these values are modified up to $r_{match}$ = 80 and $j_{max}$ = 70 and down to $rintp$ = 0.01 for the full complex remnant cases.
+ The differential cross sections deviate $<$ 2$\%$  between calculation initializations. 
+ Furthermore, as long as $rintp >$ 0.05, the deviation from primary initializations is $<$ 0.5$\%$, so $< 2\%$ is a conservative limit to stability. 
+ Other grid and strength parameters like non-local range $rnl$ and center $centre$ are adapted from FRESCO's suggestions,
+while $rnl$ is set to 0.5 fm larger than the largest $rnl$ suggestion and $centre=0$ is used.
+Few more step parameters are carefully adjusted and checked to ensure our work's credibility.
+
+The post-form results together with experimental data \cite{PhysRev.101.209} are presented in Fig. \ref{fig:post}.
+In both energy scales, all three differential cross sections fit well with experiment in shape. 
+Also, the agreement is better for 4.51 MeV case, as it gives more direct reactions than lower one.
+We can see that ZR approximation gives result deviates most from experiment because it applies the roughest approximation.
+It looks DWBA with or without remnants yield very similar results.
 This makes sense because $U_{pA}$ and $U_{pB}$ are so similar that they almost cancel each other in Eq. \ref{tpost}.
-But looking closer, we find the one with remnants is more contiguous to experiment.
+But looking closer, we find the one with remnants is closer to experiment, which is for sure.
